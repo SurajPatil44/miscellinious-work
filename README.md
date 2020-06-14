@@ -1,10 +1,6 @@
-AT command automation
-
-
-##create_data_base : will create Command --> Response database of commands for comparison
-
-##TODO : 
-1.add rules of comaprison urc on/off, functionality on/off
-2. add script to drive the execution
-         "# miscelliious work" 
-"## Pathfinder algorithm" 
+# Miscellinious Work
+## Pathfinder Algorithm
+### Improvements needed
+1. To find shortest distance between any two points in GRID.
+2. start < destination i.e. only goes forward
+3. Path is down and up no diagonal path
