@@ -28,11 +28,11 @@ weights = copy.deepcopy(GRID)
 path_see = [[0 for _ in range(GRID_WIDTH)]for _ in range(GRID_HEIGHT)]
 weights_see = [[0 for _ in range(GRID_WIDTH)]for _ in range(GRID_HEIGHT)]
 path = []
-start = (0,0)
-destination = (GRID_HEIGHT-1,GRID_WIDTH-1,)
+start = (0,0) #START
+destination = (GRID_HEIGHT-1,GRID_WIDTH-1) #DESTINATION
 
 ################################################
-# WEIGHTS TABLE CALCULATE BY BELOW SURBOUTINE  #
+# WEIGHTS TABLE CALCULATE BY BELOW SUBROUTINE  #
 #                                              #
 #    2       4       7       13      20        #
 #                                              #
