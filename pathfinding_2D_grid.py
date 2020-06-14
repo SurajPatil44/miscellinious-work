@@ -32,7 +32,7 @@ start = (0,0)
 destination = (GRID_HEIGHT-1,GRID_WIDTH-1,)
 
 ################################################
-#  WEIGHTS TABLE CALCULATE BY BELOW SUROUTINT  #
+# WEIGHTS TABLE CALCULATE BY BELOW SURBOUTINE  #
 #                                              #
 #    2       4       7       13      20        #
 #                                              #
