@@ -19,10 +19,24 @@ def print_list(_l):
 		
 	print(_st)
 	
-GRID_WIDTH = 5
-GRID_HEIGHT = 5
+GRID_WIDTH = 10
+GRID_HEIGHT = 10
 #GRID = [[1,4,INF,1,1],[1,INF,1,INF,1],[1,1,INF,1,1],[INF,1,INF,1,1],[1,1,1,1,1]]
-GRID = [[random.randint(1,9) for _ in range(GRID_WIDTH)] for _ in range(GRID_HEIGHT)]
+#GRID = [[random.choice([0,INF]) for _ in range(GRID_WIDTH)] for _ in range(GRID_HEIGHT)]
+GRID  = [
+         [0    , 0    , 65535, 65535, 0    , 65535, 65535, 65535, 65535, 65535], 
+         [0    , 0    , 65535, 0    , 65535, 65535, 65535, 65535, 65535, 0    ], 
+         [0    , 65535, 65535, 65535, 65535, 0    , 65535, 65535, 0    , 65535], 
+         [0    , 0    , 0    , 0    , 0    , 0    , 65535, 65535, 65535, 0    ], 
+         [65535, 0    , 65535, 0    , 0    , 0    , 65535, 0    , 65535, 0    ], 
+         [65535, 65535, 65535, 0    , 0    , 0    , 0    , 0    , 0    , 65535], 
+         [0    , 65535, 0    , 0    , 65535, 65535, 65535, 0    , 0    , 0    ], 
+         [65535, 65535, 0    , 0    , 65535, 65535, 65535, 65535, 65535, 0    ], 
+         [65535, 0    , 0    , 65535, 65535, 0    , 65535, 65535, 65535, 0    ], 
+         [0    , 0    , 65535, 65535, 0    , 0    , 65535, 65535, 65535, 0    ]
+        ]
+print_list(GRID)
+
 #GRID = [[r for _ in range(GRID_LEN)] for _ in range(GRID_LEN)]
 weights = copy.deepcopy(GRID)
 path_see = [[0 for _ in range(GRID_WIDTH)]for _ in range(GRID_HEIGHT)]
